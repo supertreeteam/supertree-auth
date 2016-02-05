@@ -17,6 +17,7 @@ module.exports = {
       }
     });
 
-    app.import('vendor/ember-simple-auth.js');
+    app.import('node_modules/ember-simple-auth/index.js');
+
   }
 };
