@@ -1,7 +1,7 @@
 {
   "name": "supertree-auth",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Shared auth flow for supertree apps.",
   "directories": {
     "test": "tests"
   },
@@ -45,7 +45,9 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^5.1.5",
+    "ember-cli-htmlbars": "^1.0.1",
+    "ember-simple-auth": "1.0.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
