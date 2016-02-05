@@ -1,8 +1,38 @@
 {
   "predef": [
+    "server",
     "document",
     "window",
-    "-Promise"
+    "location",
+    "setTimeout",
+    "$",
+    "-Promise",
+    "define",
+    "console",
+    "visit",
+    "exists",
+    "fillIn",
+    "click",
+    "keyEvent",
+    "triggerEvent",
+    "find",
+    "findWithAssert",
+    "wait",
+    "DS",
+    "andThen",
+    "currentURL",
+    "currentPath",
+    "currentRouteName",
+    "Pretender",
+    "authenticateSession",
+    "moment",
+    "invalidateSession",
+    "EmberENV",
+    "Ember",
+    "analytics",
+    "QUnit",
+    "module",
+    "import"
   ],
   "browser": true,
   "boss": true,
@@ -28,5 +58,7 @@
   "white": false,
   "eqnull": true,
   "esnext": true,
-  "unused": true
+  "unused": true,
+  "quotmark": false,
+  "maxlen": 120
 }

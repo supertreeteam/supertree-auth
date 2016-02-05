@@ -1,14 +1,17 @@
-bower_components/
-tests/
-tmp/
-dist/
+# compiled output
+/dist
+/tmp
+/docs
 
-.bowerrc
-.editorconfig
-.ember-cli
-.travis.yml
-.npmignore
-**/.gitkeep
-bower.json
-Brocfile.js
-testem.json
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/*.log
+/.idea
+/.DS_Store
+/*.swp
