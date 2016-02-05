@@ -1,0 +1,10 @@
+<span class="checkbox {{if checked 'checked '}}{{unless disabled 'clickable'}}">
+  <input name="check" type="checkbox" checked={{checked}}>
+  <div class="fa fa-check"></div>
+</span>
+
+{{#if label}}
+  {{forms/label-field classNames=labelClass classNameBindings='disabled::clickable' for="check" value=label}}
+{{else}}
+  {{yield}}
+{{/if}}

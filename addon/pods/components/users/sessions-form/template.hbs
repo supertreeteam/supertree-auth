@@ -1,0 +1,21 @@
+<h1 class="heavy-header text-center">
+  {{t 'sessions.new.title'}}
+</h1>
+<form {{action "login" on="submit"}}>
+  {{input type="email"
+          autofocus="autofocus"
+          name="email"
+          placeholder=(t 'models.users.placeholders.email')
+          value=identification}}
+
+  {{input type="password"
+          placeholder=(t 'models.users.placeholders.password')
+          value=password}}
+
+  {{forms/checkbox-field value=rememberMe
+                         label=(t 'models.users.attributes.rememberMe')}}
+
+  {{forms/submit-button class="el-button--primary el-button--block"
+                        label=(t 'sessions.new.submit')
+                        disabled=isPending}}
+</form>

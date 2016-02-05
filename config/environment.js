@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = function(/* environment, appConfig */) {
-  return { };
+  var ENV = {
+    modulePrefix: 'supertree-auth',
+    podModulePrefix: 'supertree-auth/pods',
+  }
+  return ENV;
 };

@@ -1,0 +1,22 @@
+{{#select-box
+  placeholder=placeholder
+  on-select=(action 'onSelect')
+  on-click-outside=(action 'close')
+  on-click-outside=(action 'close')
+  on-press-up=(action 'pressedUp')
+  on-press-down=(action 'pressedDown')
+  on-press-escape=(action 'close')as |sb|}}
+
+  <div class="pseudo-select-box">
+    {{sb.selected-option label=(get value optionLabelPath) onclick='sb.toggle'}}
+  </div>
+
+  <div class="dropdown">
+    {{#each collection as |option|}}
+      {{sb.option value=(get option optionValuePath)
+                  label=(get option optionLabelPath)
+                  classNames="stack pseudo button"}}
+    {{/each}}
+  </div>
+{{/select-box}}
+

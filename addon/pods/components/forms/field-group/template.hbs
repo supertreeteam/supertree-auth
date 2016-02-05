@@ -1,0 +1,20 @@
+{{#if label}}
+  {{forms/label-field  for=value value=label }}
+  {{#if optional}}
+    <span class="optional pull-right cap">
+      &nbsp;{{t 'forms.optional'}}
+    </span>
+  {{/if}}
+{{else}}
+  {{#if optional}}
+    <span class="optional">{{t 'forms.optional'}}</span>
+  {{/if}}
+{{/if}}
+
+{{#forms/field-validate error=error}}
+  {{yield}}
+
+  {{#if hint}}
+    <span class="hint">{{hint}}</span>
+  {{/if}}
+{{/forms/field-validate}}

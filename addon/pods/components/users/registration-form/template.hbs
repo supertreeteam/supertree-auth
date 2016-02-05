@@ -1,0 +1,43 @@
+<h1 class="heavy-header text-center">{{t 'registrations.new.heading'}}</h1>
+<form {{action "register" on="submit"}}>
+  <div class="row form-row">
+    <div class="mr-sm">
+      {{input placeholder=(t 'models.users.placeholders.firstName')
+              value=firstName}}
+    </div>
+    <div>
+      {{input placeholder=(t 'models.users.placeholders.lastName')
+              value=lastName}}
+    </div>
+
+  </div>
+
+  <div class="row form-row">
+    {{input type="email"
+            autofocus="autofocus"
+            name="email"
+            placeholder=(t 'models.users.placeholders.email')
+            value=identification}}
+  </div>
+
+
+  <div class="row form-row">
+    {{input type="password"
+            placeholder=(t 'models.users.placeholders.password')
+            value=password}}
+  </div>
+
+
+  <div class="row form-row">
+    {{input type="password"
+            placeholder=(t 'models.users.placeholders.passwordConfirmation')
+            value=passwordConfirmation}}
+  </div>
+
+
+  <div class="row form-row">
+    {{forms/submit-button class="el-button--primary el-button--block"
+                          label=(t 'registrations.new.submit')
+                          disabled=isPending}}
+  </div>
+</form>
