@@ -2,6 +2,7 @@
   "excludeFiles": [
     "node_modules/**",
     "bower_components",
+    "blanket-options.js"
   ],
   "additionalRules": [ "lib/jscs-rules/*.js" ],
   "fileExtensions": [".js"],
@@ -112,7 +113,9 @@
   "disallowPaddingNewlinesInBlocks": true,
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpacesInsideParentheses": true,
-  "disallowTrailingComma": true,
+  "requireTrailingComma": {
+    ignoreSingleLine: true,
+  },
   "disallowTrailingWhitespace": true,
   "disallowPaddingNewlinesBeforeKeywords": [
     "else"
