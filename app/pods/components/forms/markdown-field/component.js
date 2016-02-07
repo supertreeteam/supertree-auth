@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/components/forms/markdown-field/component';
+export { default } from 'supertree-auth/pods/components/forms/markdown-field/component';

@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/components/forms/label-field/component';
+export { default } from 'supertree-auth/pods/components/forms/label-field/component';

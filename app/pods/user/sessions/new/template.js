@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/user/sessions/new/template';
+export { default } from 'supertree-auth/pods/user/sessions/new/template';

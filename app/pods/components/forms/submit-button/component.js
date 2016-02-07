@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/components/forms/submit-button/component';
+export { default } from 'supertree-auth/pods/components/forms/submit-button/component';

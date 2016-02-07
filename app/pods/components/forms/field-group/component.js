@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/components/forms/field-group/component';
+export { default } from 'supertree-auth/pods/components/forms/field-group/component';

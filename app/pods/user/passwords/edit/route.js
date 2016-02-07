@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/user/passwords/edit/route';
+export { default } from 'supertree-auth/pods/user/passwords/edit/route';
