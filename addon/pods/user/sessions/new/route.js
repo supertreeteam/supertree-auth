@@ -6,8 +6,8 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin, {
     if (isExiting) {
       controller.setProperties({
         identification: '',
-        password     : '',
-        errorMessage : '',
+        password: '',
+        errorMessage: '',
       });
     }
   },

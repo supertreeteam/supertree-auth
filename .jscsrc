@@ -2,9 +2,6 @@
   "excludeFiles": [
     "node_modules/**",
     "bower_components",
-    "supertree-auth/initializers/export-application-global.js",
-    "supertree-auth/tests/helpers/start-app.js",
-    "blanket-options.js"
   ],
   "additionalRules": [ "lib/jscs-rules/*.js" ],
   "fileExtensions": [".js"],

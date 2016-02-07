@@ -9,10 +9,10 @@ export default Component.extend({
 
   click() {
     if (!this.get('disabled')) {
+      this.toggleProperty('checked');
+
       if (this.get('action')) {
         this.sendAction('action', this.get('checked'));
-      } else {
-        this.toggleProperty('checked');
       }
     }
   },
