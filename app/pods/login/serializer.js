@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/login/serializer';
+export { default } from 'supertree-auth/pods/login/serializer';

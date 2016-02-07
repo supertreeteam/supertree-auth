@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/login/model';
+export { default } from 'supertree-auth/pods/login/model';

@@ -1,1 +1,1 @@
-export { default } from 'supertree-auth/authenticators/devise.js';
+export { default } from 'supertree-auth/authenticators/devise';
