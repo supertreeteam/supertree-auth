@@ -4,7 +4,7 @@
 module.exports = function(/* environment, appConfig */) {
   var ENV = {
     modulePrefix: 'supertree-auth',
-    podModulePrefix: 'supertree-auth/pods',
+    podModulePrefix: 'pods',
   }
   return ENV;
 };
