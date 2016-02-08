@@ -1,13 +1,15 @@
-<div class="em-markdown-editor">
+<div class="em-markdown-editor row form-row">
   <div class="em-markdown-edit">
-    <strong>
+    <label>
       {{label}}
       <i title={{lang.fullscreen}} {{action "toggleFullscreen"}} class="fa fa-expand right"></i>
-    </strong>
-    {{textarea value=value placeholder=placeholder}}
+    </label>
+    <div class="em-markdown-input">
+      {{textarea value=value placeholder=placeholder}}
+    </div>
   </div>
   <div class="em-markdown-preview">
-    <strong>{{lang.preview}}</strong>
+    <label>{{lang.preview}}</label>
     <div class="em-markdown-output">
       {{format-markdown value}}
     </div>

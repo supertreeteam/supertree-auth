@@ -1,6 +1,6 @@
 {
   "name": "supertree-auth",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Shared auth flow for supertree apps.",
   "directories": {
     "test": "tests"
