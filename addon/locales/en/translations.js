@@ -20,9 +20,6 @@ export default {
     registrations: {
       new: {
         route: 'Sign up',
-        heading: 'Create a free account',
-        submit: 'Get started',
-        success: 'Registration successful',
       },
     },
 
