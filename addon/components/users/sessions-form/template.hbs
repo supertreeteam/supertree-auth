@@ -1,21 +1,21 @@
-<h1 class="heavy-header text-center">
-  {{t 'sessions.new.title'}}
-</h1>
+<div class="heavy-header text-center">
+  {{t 'supertreeAuth.sessions.new.title'}}
+</div>
 <form {{action "login" on="submit"}}>
   {{input type="email"
           autofocus="autofocus"
           name="email"
-          placeholder=(t 'models.users.placeholders.email')
+          placeholder=(t 'supertreeAuth.models.users.placeholders.email')
           value=identification}}
 
   {{input type="password"
-          placeholder=(t 'models.users.placeholders.password')
+          placeholder=(t 'supertreeAuth.models.users.placeholders.password')
           value=password}}
 
   {{forms/checkbox-field value=rememberMe
-                         label=(t 'models.users.attributes.rememberMe')}}
+                         label=(t 'supertreeAuth.models.users.attributes.rememberMe')}}
 
   {{forms/submit-button class="el-button--primary el-button--block"
-                        label=(t 'sessions.new.submit')
+                        label=(t 'supertreeAuth.sessions.new.submit')
                         disabled=isPending}}
 </form>

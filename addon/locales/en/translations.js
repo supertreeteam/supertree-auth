@@ -1,48 +1,47 @@
 export default {
-  app: {
-    name: 'Supertree',
-  },
-
-  common: {
-    buttons: {
-      apply: 'Apply',
-      discard: 'Discard',
-      create: 'Create',
+  supertreeAuth: {
+    app: {
+      name: 'Supertree',
     },
-  },
 
-  logout: {
-    route: 'Sign out',
-  },
-
-  sessions: {
-    new: {
-      route: 'Login',
-      title: 'Welcome back',
-      submit: 'Login',
-      invalidCredentials: 'Email or password were incorrect.',
+    logout: {
+      route: 'Sign out',
     },
-  },
 
-  models: {
-    users: {
-      attributes: {
-        email: 'Email',
-        password: 'Password',
-        passwordConfirmation: 'Confirm password',
-        rememberMe: 'Remember Me',
+    sessions: {
+      new: {
+        route: 'Login',
+        title: 'Welcome back',
+        submit: 'Login',
+        invalidCredentials: 'Email or password were incorrect.',
       },
+    },
 
-      placeholders: {
-        email: 'ele@phant.trunk',
-        password: 'Password',
-        passwordConfirmation: 'Confirm password',
-        lastName: 'Last name',
-        firstName: 'First name',
+    registrations: {
+      new: {
+        route: 'Sign up',
+        heading: 'Create a free account',
+        submit: 'Get started',
+        success: 'Registration successful',
       },
+    },
 
-      hints: {
+    models: {
+      users: {
+        attributes: {
+          email: 'Email',
+          password: 'Password',
+          passwordConfirmation: 'Confirm password',
+          rememberMe: 'Remember me',
+        },
 
+        placeholders: {
+          email: 'What is your email?',
+          password: 'Password',
+          passwordConfirmation: 'Confirm password',
+          lastName: 'Last name',
+          firstName: 'First name',
+        },
       },
     },
   },
